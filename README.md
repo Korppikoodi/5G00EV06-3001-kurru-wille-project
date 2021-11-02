@@ -1,7 +1,6 @@
 Name:  Wille Kurru
 
-Topic:              Tarkoitus olisi tehdä appi, joka hakee dataa jostain rest-apista ja visualisoi sen (esimerkiksi johonkin kaavioon). App myös tulee sisältämään ns. sivuja
-                    hyödyntämällä yhdessä tehtävässä käytettyä router kirjastoa (näkymät voisi olla datavisualisaatio, kuvat ja videot). Tarkoitus olisi pystyä myös näyttämään                         kuvia ja videoita, jotka on haettu jonkin toisen apin kautta. Ominaisuuksina olisi                                 mahdollisesti datalähteen valinta, hakutoiminto, filtteri, kolme eri näkymää ja esitystavan valinta datalle, kuvalle tai videolle.
+Topic:              Goal of this web application is to create videogame web-app where user can visualize searched game data (price, populairity, ratings, etc), see related pictures to the game and see related game trailer. Each of these may get their own view and if i decide to go with that then routing is done using react-router and data context will be shared between components using context hook. User will have choises regarding what data they want to get visualized and if possible maybe even chart visualization regarding succes of game by its players base and sales. Pictures related to game could be gallery of related gameplay scenes. Video will be only one or more trailer depending on if game has many. I plan on using mainly this api for now https://rapidapi.com/accujazz/api/rawg-video-games-database/ i may need to find other api for pictures and videos.
 
 Heroku link:        To be added..
 
