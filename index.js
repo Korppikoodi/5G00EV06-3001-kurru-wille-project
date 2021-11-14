@@ -27,7 +27,7 @@ app.get("/search", async (req, res) => {
         raw,
         {headers: {
             'Client-ID': process.env.client,
-            'Authorization': `Bearer ${process.end.token}`,
+            'Authorization': `Bearer ${process.env.token}`,
         }}
       )
     res.status(200).send(response.data)
@@ -40,7 +40,7 @@ app.get("/specific/:path", async (req, res) => {
         raw,
         {headers: {
             'Client-ID': process.env.client,
-            'Authorization': `Bearer ${process.end.token}`,
+            'Authorization': `Bearer ${process.env.token}`,
         }}
       )
     res.status(200).send(response.data)
