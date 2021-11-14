@@ -16,3 +16,5 @@ Release 1: 2021-11-15 features
 - info component doesnt visualize data yet
 - To be added: better appearance, screenshots and videos in grid view, info page that will show ratings and relevant
 game data
+
+Currently issues with api related client and token not working in heroku
