@@ -1,5 +1,5 @@
 function InfoView({data}){
-    return
+    return(<div></div>)
 
 }
 

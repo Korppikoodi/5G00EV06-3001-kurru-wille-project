@@ -5,8 +5,8 @@ import GalleryView from "./GalleryView"
 import VideoView from "./VideoView"
 
 const getRelevant = async (data, setter) => {
-    const videos = await axios.get(`http://localhost:3000/specific/game_videos?where=${data.videos.join()}&key=video_id`)
-    const screenshot = await axios.get(`http://localhost:3000/specific/screenshots?where=${data.screenshots.join()}&key=url`)
+    const videos = await axios.get(`https://korppi-loppuprojekti.herokuapp.com/specific/game_videos?where=${data.videos.join()}&key=video_id`)
+    const screenshot = await axios.get(`https://korppi-loppuprojekti.herokuapp.com/specific/screenshots?where=${data.screenshots.join()}&key=url`)
 
     setter({screenshots: screenshot.data, videos: videos.data})
 

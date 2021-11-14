@@ -4,7 +4,7 @@ import GameOverView from "./components/GameOverView";
 import './Main.scss'
 
 const getData = async (search, setter) => {
-  const response = await fetch(`http://localhost:3000/search?search=${search}`)
+  const response = await fetch(`https://korppi-loppuprojekti.herokuapp.com/search?search=${search}`)
   const res = await response.json()
   setter(res)
 }
@@ -22,7 +22,7 @@ function App() {
   const updateChosen = (val) => {
     setChosen(val)
   }
-  
+
   return (
     <div className="Main">
       <div className="search-bar">
