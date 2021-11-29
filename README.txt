@@ -31,7 +31,7 @@ Known bugs
 - videos and screenshots change with little delay when user changes page for the first time
 - not really a bug but there isnt notice to user if search doesnt match any game (doesnt crash but nothing happens after loading)
 
-Link to screencast: https://tuni-my.sharepoint.com/:v:/g/personal/wille_kurru_tuni_fi/EYr7mc94ezJAuGygjHqRZtsBm8DSqVPJpqa8Bb8mCLNwGw?e=jXw1nC
+Link to screencast: https://tuni-my.sharepoint.com/:v:/g/personal/wille_kurru_tuni_fi/EYr7mc94ezJAuGygjHqRZtsBm8DSqVPJpqa8Bb8mCLNwGw?e=VbOXSu
        timestamps: 1. 00:00 - 03:28
                     2. 03:28 - 16:10
                     3. 16:10 - 17:17
