@@ -1,14 +1,14 @@
-import React, { useState, useContext} from "react";
+import React, { useState} from "react";
 import GameOverView from "./components/GameOverView";
 import './Main.scss'
+import axios from 'axios';
 import CircularProgress from '@mui/material/CircularProgress';
 import DataContextProvider from "./components/DataContext";
 
 // this function fetches the searched game and sets data to data state as well as loading to false
 const getData = async (search, setter, loading) => {
-  const response = await fetch(`https://korppi-loppuprojekti.herokuapp.com/search?search=${search}`)
-  const res = await response.json()
-  setter(res)
+  const {data} = await axios.get(`https://korppi-loppuprojekti.herokuapp.com/search?search=${search}`)
+  setter(data)
   loading(false)
 }
 // this is the main component

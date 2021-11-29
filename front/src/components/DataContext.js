@@ -22,10 +22,6 @@ const DataContextProvider = ({game, comp}) => {
             const {data} = await axios.get(`https://korppi-loppuprojekti.herokuapp.com/specific/screenshots?where=${game.screenshots.join()}&key=*`)
             temp.screenshots = data;
         }
-        if (game.age_ratings !== undefined){
-            const {data} = await axios.get(`https://korppi-loppuprojekti.herokuapp.com/specific/age_ratings?where=${game.age_ratings.join()}&key=*`)
-            temp.age_ratings  = data;
-        }
         if (game.cover !== undefined){
             const {data} = await axios.get(`https://korppi-loppuprojekti.herokuapp.com/specific/covers?where=${game.cover}&key=*`)
             temp.cover = data;
