@@ -1,0 +1,45 @@
+.media-view{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  .media-container {
+    display: grid;
+    justify-items: center;
+    width: 80%;
+    height: 100%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    .media-item {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      padding: 5px;
+      align-items: center;
+      width: 90%;
+      height: 90%;
+    }
+  }
+  .paging{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 10%;
+    .MuiButton-root{
+      position: relative;
+      top: 2vh;
+      width: 80%;
+    }
+  }
+}
+
+.empty{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 5vw;
+  color: white;
+}
+

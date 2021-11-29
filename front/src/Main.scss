@@ -11,7 +11,7 @@
     .search-bar{
         display: flex;
         background-color: black;
-        height: 5vh;
+        height: 5%;
         width: 100%;
         align-items: center;
         .headline{
@@ -32,7 +32,7 @@
         display: flex;
         background-image: url("./background3.jpg");
         width: 100%;
-        height: 100%;
+        height: 95%;
         justify-content: center;
     }
         .results-div{
@@ -58,20 +58,25 @@
         }
         .navigation{
             display: flex;
-            height: 5vh;
+            height: 5%;
             width: 100%;
             justify-content: space-evenly;
             button{
                 width: 33%;
                 height: 100%;
-                background-color: grey;
-                
+                background-color: #006064;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1vw;
+
             }
         }
         .view{
             display: flex;
             align-items: center;
             flex-direction: column;
+            width: 100%;
+            height: 95%;
         }
 
 }
