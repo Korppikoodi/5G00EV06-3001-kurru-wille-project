@@ -24,7 +24,7 @@ Release 2: 2021-11-29 features
 - added paging to both screenshots and videos for better visualization
 - some rather small css changes
 - added datacontext so fetched gamedata is in one place and doesnt need to be passed down in props
-- fixied a lot of bugs
+- fixed a lot of bugs
 
 Known bugs
 
