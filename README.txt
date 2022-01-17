@@ -4,7 +4,7 @@ Topic:   Goal of this web application is to create simple videogame react-app wh
 
 Heroku link:        https://korppi-loppuprojekti.herokuapp.com/
 
-Release 1: 2021-11-15 features
+Release 1: 2021-11-15 features:
 
 - Basic structure that end result will follow
 - Most of the main components have been created while not completed
@@ -15,7 +15,7 @@ Release 1: 2021-11-15 features
 - To be added: better appearance, screenshots and videos in grid view, info page that will show ratings and relevant
 game data
 
-Release 2: 2021-11-29 features
+Release 2: 2021-11-29 features:
 
 - the info view with its contents has been added
 - both screenshots and videos are shown in grid view now
@@ -24,11 +24,11 @@ Release 2: 2021-11-29 features
 - added datacontext so fetched gamedata is in one place and doesnt need to be passed down in props
 - fixed a lot of bugs
 
-Later additions
+Later additions:
 
-- loading component that shows loading icon and text that is given to it as a prop
+- added loading component that shows loading icon and text that is given to it as a prop
 - improved css
 
-Known issues
+Known issues:
 
 - fetching game related data can sometimes take a while
