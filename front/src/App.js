@@ -2,8 +2,8 @@ import React, { useState} from "react";
 import GameOverView from "./components/GameOverView";
 import './Main.scss'
 import axios from 'axios';
-import CircularProgress from '@mui/material/CircularProgress';
 import DataContextProvider from "./components/DataContext";
+import Loading from "./components/Loading";
 
 // this function fetches the searched game and sets data to data state as well as loading to false
 const getData = async (search, setter, loading) => {
@@ -16,7 +16,7 @@ function App() {
   const [data, setData] = useState([])
   const [search, setSearch] = useState('')
   const [chosen, setChosen] = useState(null)
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(null);
   // this is search button click event handler it starts the data fetch
   const handleClick = () => {
     setChosen(null)
@@ -46,14 +46,16 @@ function App() {
         </div>
       </div>
       <div className='background'>
-      {chosen === null ? <div className="results-div">
-        {loading === true ? <CircularProgress/> :
+      {loading === null ? <></> :
+        chosen === null ?
+        loading === true ? <Loading text={'Searching'}/> : data.length > 0 ?
+        <div className="results-div">
         <ul>
           {data.map((d) => {
               return <li key={d.id} className="result-row"><label>{d.name}</label><button onClick={() => updateChosen(d)}>Select</button></li>
           })}
-        </ul>}
-      </div> : <DataContextProvider game={chosen} comp={<GameOverView/>}/>
+        </ul></div>: <p>NO RESULTS</p>
+       : <DataContextProvider game={chosen} comp={<GameOverView/>}/>
       }
       </div>
     </div>

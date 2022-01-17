@@ -1,11 +1,13 @@
 .info-container{
     display: flex;
     flex-direction: column;
+    color: black;
     background-color: rgb(253, 253, 253);
     width: 50%;
     height: 99%;
     margin: 0.5vh 0px 0px 0px;
     border-radius: 1% 1% 0px 0px;
+    overflow-y:auto;
     gap: 0.5vh;
 }
 .first-row{

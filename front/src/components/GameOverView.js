@@ -4,6 +4,7 @@ import GalleryView from "./GalleryView"
 import VideoView from "./VideoView"
 import CircularProgress from '@mui/material/CircularProgress';
 import { DataContext } from "./DataContext"
+import Loading from "./Loading";
 
 
 // this component handles which view is currently active
@@ -22,7 +23,7 @@ function GameOverView(){
         </div>
             <div className="view">
             {view}
-            </div></> : <CircularProgress style={{alignSelf: 'center'}}/>
+            </div></> : <Loading text={'loading data'}/>
         }
     </div>)
 

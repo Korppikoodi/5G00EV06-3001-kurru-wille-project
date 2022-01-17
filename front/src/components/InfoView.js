@@ -34,6 +34,7 @@ const pickText = (data) => {
 const status = ['released', 'alpha', 'beta', 'early_access', 'offline', 'cancelled', 'rumored', 'delisted']
 function InfoView(){
     const {newData} = useContext(DataContext)
+    console.log(newData);
     return(<div className='info-container'>
         <div className='first-row'>
             {newData.cover !== undefined ? <img width={'25%'} height={'95%'} src={`https://images.igdb.com/igdb/image/upload/t_original/${newData.cover[0].image_id}.jpg`}>

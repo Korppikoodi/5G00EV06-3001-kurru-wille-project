@@ -13,7 +13,6 @@ const DataContextProvider = ({game, comp}) => {
   useEffect(() => {
     (async () => {
         let temp = game;
-        console.log(game);
         if (game.videos !== undefined){
             const {data} = await axios.get(`https://korppi-loppuprojekti.herokuapp.com/specific/game_videos?where=${game.videos.join()}&key=*`)
             temp.videos = data;
@@ -52,7 +51,6 @@ const DataContextProvider = ({game, comp}) => {
             const {data} = await axios.get(`https://korppi-loppuprojekti.herokuapp.com/specific/websites?where=${game.websites.join()}&key=*`)
             temp.websites = data;
         }
-        console.log(temp);
         setData(temp);
         setLoading(false);
     })()

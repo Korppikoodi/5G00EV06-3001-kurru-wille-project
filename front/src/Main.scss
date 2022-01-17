@@ -8,9 +8,17 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    button{
+        width: 2.8vw;
+        height: 2.5vh;
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: rgb(118, 51, 131);
+        border-radius: 3px;
+    }
     .search-bar{
         display: flex;
-        background-color: black;
+        background: rgb(2,0,36);
         height: 5%;
         width: 100%;
         align-items: center;
@@ -26,33 +34,49 @@
         }
         .search{
             display: flex;
+            gap: 10px;
         }
         }
     .background{
         display: flex;
-        background-image: url("./background3.jpg");
+        background-image: url("./background.jpg");
+        background-size: 100%;
         width: 100%;
         height: 95%;
+        color: white;
         justify-content: center;
+        align-items: center;
     }
+
         .results-div{
             display: flex;
-            background-color: lightgray;
-            width: 24%;
-            height: 100%;
+            background-color: rgba(54, 60, 95, 0.897);
+            padding: 1vw;
             flex-direction: column;
             align-items: center;
+            font-size: 1vw;
+            justify-content: center;
             overflow: auto;
+            border-radius: 5px;
             .result-row{
                 display: flex;
                 padding: 5px;
                 gap: 5px;
+                button{
+                    width: 2.5vw;
+                    color: white;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    background-color: rgb(118, 51, 131);
+                    border-radius: 3px;
+                }
 
             }
         }
         .overview-area{
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
             width: 100%;
             height: 100%;
         }
@@ -60,15 +84,15 @@
             display: flex;
             height: 5%;
             width: 100%;
+            background: rgb(2,0,36);
             justify-content: space-evenly;
             button{
                 width: 33%;
                 height: 100%;
-                background-color: #006064;
+                background-color: #2b2486;
                 color: white;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 1vw;
-
             }
         }
         .view{
